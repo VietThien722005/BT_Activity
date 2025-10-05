@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Thanh tiêu đề -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_media_previous"
+                app:tint="#37474F"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:id="@+id/btnSettings"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_manage"
+                app:tint="#37474F"/>
+        </LinearLayout>
+
+        <!-- Ảnh đại diện + tên -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="24dp">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"/>
+
+                <TextView
+                    android:id="@+id/badgeNotification"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/badge_red"
+                    android:text="3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="4dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taya Loren Miass"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0D47A1"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Thống kê -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:text="125"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"/>
+                <TextView
+                    android:text="Friends"
+                    android:textSize="14sp"
+                    android:textColor="#607D8B"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:text="250"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"/>
+                <TextView
+                    android:text="Followers"
+                    android:textSize="14sp"
+                    android:textColor="#607D8B"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Thông tin liên hệ -->
+        <TextView
+            android:text="Thông tin liên hệ"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="24dp"
+            android:elevation="4dp">
+
+            <TextView android:text="📧 Email: mail@email.com"
+                android:textSize="14sp"
+                android:textColor="#37474F"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:text="📞 Phone: +99 999 555 222"
+                android:textSize="14sp"
+                android:textColor="#37474F"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:text="💬 Skype: me007"
+                android:textSize="14sp"
+                android:textColor="#37474F"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:text="🌐 Web: cssauthor.com"
+                android:textSize="14sp"
+                android:textColor="#37474F"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
